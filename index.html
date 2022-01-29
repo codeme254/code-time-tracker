@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaph code time tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container__main">
+        <audio src="alarm.mp3"></audio>
+        <div class="container">
+            <h1 class="title">
+                <span class="title__main">Zaph Code duration Tracker</span>
+                <span class="title__sub">Did zaph code for 3+ hours today</span>
+            </h1>
+            <div class="main">
+                <h1 class="main__time">
+                    <span class="main__time--hours">0</span>
+                    <span class="main__time--colons">:</span>
+                    <span class="main__time--minutes">00</span>
+                    <span class="main__time--colons">:</span>
+                    <span class="main__time--seconds">00</span>
+                </h1>
+                <div class="buttons">
+                    <button class="btn button__start">start</button>
+                    <button class="btn button__pause">pause</button>
+                    <button class="btn button__stop">stop</button>
+                    <button class="btn button__reset">reset</button>
+                </div>
+            </div>
+        </div>
+        <p class="about">
+            &copy; 2022 by Dennis Otwoma, I use this app to track how long I have coded on any given day, my normal target is usually to code for 3+ hours on any single day and this app really helps me in doing that.
+        </p>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

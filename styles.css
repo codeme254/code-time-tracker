@@ -1,0 +1,105 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --col-primary: crimson;
+    --col-secondary: orangered;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    background-color: #f0f0f0;
+    
+}
+.container__main{
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)),url(laptop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+}
+.container{
+    width: clamp(1000px, 1000px, 1000px);
+    margin: 6rem auto;
+    position: relative;
+    /* height: clamp(90vh, 90vh, 90vh); */
+}
+.title{
+    color: #ccc;
+    margin-bottom: 4rem;
+}
+.title__main{
+    font-size: 6rem;
+    display: block;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    /* margin-bottom: .5rem */
+}
+.title__sub{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+    width: fit-content;
+    background-color: var(--col-secondary);
+    margin: auto;
+    border-radius: 5px;
+}
+.main{
+    width: fit-content;
+    margin: auto;
+}
+.main__time{
+    font-size: 8rem;
+    color: #ccc;
+    background-color: var(--col-primary);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin: 3rem auto;
+    margin-bottom: 3rem;
+    width: fit-content;
+}
+.buttons{
+    display: flex;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 1.5rem 3rem;
+    font-size: 3rem;
+    color: #ccc;
+    text-transform: capitalize;
+    border-radius: 8px;
+    background-color: var(--col-secondary);
+    cursor: pointer;
+}
+.btn:not(:last-of-type){
+    margin-right: 2rem;
+}
+.about{
+    position: absolute;
+    width: clamp(30rem, 30rem, 30rem);
+    top: 15rem;
+    right: 2rem;
+    line-height: 1.6;
+    text-align: justify;
+    background-color: var(--col-primary);
+    padding: 2rem;
+    font-size: 1.6rem;
+    box-shadow: inset 0 0 5px;
+    border-radius: 8px;
+    color: #ccc;
+    font-weight: bold;
+}
+.disable-button{
+    pointer-events: none;
+}
